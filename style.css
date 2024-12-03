@@ -1,0 +1,77 @@
+/* helper styles */
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-red {
+    background-color: red;
+}
+.bg-orange {
+    background-color: orange;
+}
+
+/* variables */
+:root {
+    --main-color-hue: 173;
+    --main-color-saturation: 86%;
+    --main-color-lightness: 31%;
+    --main-color: hsla(
+        var(--main-color-hue),
+        var(--main-color-saturation),
+        var(--main-color-lightness),
+        1
+    );
+    --alternative-color: #0a8c7e;
+    --white-color: #fff;
+}
+
+/* general styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+}
+
+/* navbar */
+nav {
+    padding-block: 1rem;
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+nav .container {
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--alternative-color);
+}
+
+nav .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
