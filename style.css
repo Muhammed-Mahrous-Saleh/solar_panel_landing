@@ -88,6 +88,11 @@
     --gray-color: #5d5d5d;
     --medium-gray-color: #6b6b6b;
     --light-gray-color: #d9d9d9;
+
+    --footer-bg: #283646;
+    --footer-input-bg: #3b4857;
+    --footer-dark-grey: #92989f;
+    --footer-light-grey: #b3bdc7;
 }
 
 /* general styles */
@@ -99,7 +104,13 @@
 
 body {
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
 }
+
+input {
+    all: unset;
+}
+
 .container {
     width: 80%;
     margin-inline: auto;
@@ -107,7 +118,8 @@ body {
     font-style: normal;
 }
 
-a.btn {
+a.btn,
+button.btn {
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
@@ -279,7 +291,7 @@ nav .callUs a p:last-child {
 .hero {
     background-image: url("images/hero.png");
     height: 100dvh;
-    width: 100dvw;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -935,4 +947,172 @@ nav .callUs a p:last-child {
     top: 8px;
     left: 8px;
     padding: 5.67px 10.33px;
+}
+
+/* ^ footer section */
+footer {
+    background-color: var(--footer-bg);
+}
+footer .container {
+    padding-block: 150px;
+}
+footer .footer-content {
+    display: flex;
+    gap: 54px;
+    flex-direction: column;
+    gap: 54px;
+}
+
+footer .footer-content > div:not(.line) {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-content .line {
+    border: 1px solid #71777d;
+}
+
+footer .footer-content .footer-top {
+    position: relative;
+}
+
+footer .footer-content .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+footer .footer-content .logo {
+    width: 185px;
+    height: 64px;
+    background-color: var(--light-gray-color);
+    text-align: center;
+}
+
+footer .footer-content .logo img {
+    margin-inline: auto;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer .footer-content .navLinks ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+footer .footer-content .navLinks ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+}
+
+footer .footer-content .subscription {
+    height: 82px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .footer-content .subscription p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--white-color);
+}
+
+footer .footer-content .subscription form {
+    display: flex;
+    position: relative;
+}
+
+footer .footer-content .subscription form input {
+    background-color: var(--footer-input-bg);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    padding-inline: 34px;
+    padding-block: 12px;
+    color: var(--white-color);
+    caret-color: var(--white-color);
+    border-radius: 50px 0 0 50px;
+    border: solid var(--footer-light-grey);
+    border-width: 1px 0 1px 1px;
+    position: relative;
+    z-index: 1;
+}
+
+footer .footer-content .subscription form input::placeholder {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--footer-dark-grey);
+}
+
+footer .footer-content .subscription form button {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border: solid var(--footer-light-grey);
+    border-width: 1px 1px 1px 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+footer .footer-content .subscription form .space {
+    content: "";
+    background-color: var(--footer-input-bg);
+    height: 100%;
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    right: 120px;
+    border: solid var(--footer-light-grey);
+    border-width: 1px 0;
+}
+
+footer .footer-content .footer-bottom .links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+footer .footer-content .footer-bottom .links ul li a {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.257px;
+    text-align: left;
+    color: var(--footer-dark-grey);
+    position: relative;
+}
+
+footer .footer-content .footer-bottom .links ul li a::after {
+    content: "|";
+    color: var(--footer-dark-grey);
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+footer .footer-content .footer-bottom .copyright {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2571428716182709px;
+    text-align: right;
+    color: var(--footer-dark-grey);
 }
