@@ -1,0 +1,124 @@
+@media screen and (min-width: 1024px) and (max-width: 1239.999px) {
+    html {
+        font-size: 13px;
+    }
+
+    .about .about-img .label {
+        width: 166px;
+        left: -25px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    html {
+        font-size: 12px;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    nav .menuIcon {
+        display: block;
+    }
+
+    .hero {
+        padding-top: 70px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+
+    .hero .callToAction {
+        width: 100%;
+    }
+
+    .about .about-img {
+        display: none;
+    }
+
+    .kits .cards {
+        flex-direction: column;
+    }
+
+    .teaser {
+        height: auto;
+        padding-block: 20px;
+    }
+
+    .teaser .teaser-content {
+        width: 100%;
+    }
+
+    .posts .container .posts-content {
+        flex-direction: column;
+    }
+
+    .posts .container .posts-content .posts-group {
+        grid-template-columns: auto;
+    }
+
+    .values .container .values-cards {
+        flex-direction: column;
+    }
+
+    .values .values-cards .value-card {
+        align-items: center;
+        height: auto;
+    }
+
+    .testimonials .container .testimonials-content {
+        flex-direction: column;
+    }
+
+    .testimonials .testimonial-container .testimonial {
+        gap: 32px;
+    }
+
+    .testimonials .navigation .arrows {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .footer-content .footer-nav {
+        align-items: center;
+    }
+
+    footer .footer-content .footer-nav .navLinks ul {
+        gap: 20px;
+    }
+
+    footer .footer-content > div:not(.line) {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    footer .footer-content .subscription {
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    footer .footer-content .subscription p {
+        text-align: center;
+    }
+
+    footer .footer-content .navLinks > ul {
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    footer .footer-content .footer-bottom .links ul li a::after {
+        content: none;
+    }
+
+    footer .footer-content .footer-bottom .copyright {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 8px;
+    }
+}

@@ -1,39 +1,15 @@
-/* helper styles */
-
-.bg-blue {
-    background-color: blue;
-}
-
-.bg-yellow {
-    background-color: yellow;
-}
-
-.bg-green {
-    background-color: green;
-}
-
-.bg-red {
-    background-color: red;
-}
-.bg-orange {
-    background-color: orange;
-}
 /* fonts */
 @font-face {
     font-family: "Inter";
-    src: url("fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    src: url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
 }
 @font-face {
     font-family: "Akazan";
-    src: url("fonts/Akazan_Regular.ttf") format("truetype");
+    src: url("../fonts/Akazan_Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "Plus Jakarta Sans";
-    src: url("fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Edu";
-    src: url("fonts/EduAUVICWANTArrows-VariableFont_wght.ttf")
+    src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf")
         format("truetype");
 }
 
@@ -102,9 +78,13 @@
     padding: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: "Inter", sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 input {
@@ -121,9 +101,9 @@ input {
 a.btn,
 button.btn {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 16.94px;
+    line-height: 1.0588rem;
     letter-spacing: 0.08em;
     text-align: center;
     padding: 12px 34px 12px 34px;
@@ -131,9 +111,9 @@ button.btn {
 }
 
 a.view {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: left;
     text-decoration: none;
     color: var(--main-color);
@@ -145,25 +125,28 @@ a.view {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    width: 936px;
     margin-inline: auto;
 }
 
 .section-title h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
     font-weight: 600;
-    line-height: 50.83px;
+    line-height: 3.1769rem;
     letter-spacing: -0.02em;
     text-align: center;
     color: var(--text-dark-color);
 }
 
 .section-title p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: center;
     color: var(--text-sec-color);
+}
+
+.hidden {
+    display: none;
 }
 
 /* navbar */
@@ -275,7 +258,7 @@ nav .callUs a p:first-child {
     font-style: normal;
     font-weight: 400;
     font-size: 0.9rem;
-    line-height: 22px;
+    line-height: 1.375rem;
     letter-spacing: 0.9375px;
 }
 
@@ -283,13 +266,15 @@ nav .callUs a p:last-child {
     font-style: normal;
     font-weight: 600;
     font-size: 1.5rem;
-    line-height: 22px;
+    line-height: 1.375rem;
     letter-spacing: 0.9375px;
 }
 
 /* hero section */
 .hero {
-    background-image: url("images/hero.png");
+    padding-top: 80px;
+    background-image: url("../images/hero.png");
+    background-repeat: no-repeat;
     height: 100dvh;
     background-size: cover;
     display: flex;
@@ -314,7 +299,7 @@ nav .callUs a p:last-child {
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
-    line-height: 22px;
+    line-height: 1.375rem;
     letter-spacing: 0.9375px;
 }
 
@@ -348,19 +333,17 @@ nav .callUs a p:last-child {
 .hero .callToAction h1 {
     font-style: normal;
     font-weight: 600;
-    font-size: 52px;
-    line-height: 63px;
+    font-size: 3.25rem;
+    line-height: 3.9375rem;
     letter-spacing: -0.02em;
     align-self: stretch;
 }
 
 .hero .callToAction p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.875rem;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .hero .callToAction .buttons {
@@ -369,9 +352,9 @@ nav .callUs a p:last-child {
 }
 
 .hero .callToAction .buttons a {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 16.94px;
+    line-height: 1.0588rem;
     letter-spacing: 0.08em;
     text-align: center;
     padding: 12px 34px 12px 34px;
@@ -407,23 +390,23 @@ nav .callUs a p:last-child {
 .about .about-content .text {
     display: flex;
     flex-direction: column;
-    width: 560px;
+    /* width: 560px; */
     gap: 1.5rem;
 }
 
 .about .text h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
     font-weight: 600;
-    line-height: 50.83px;
+    line-height: 3.1769rem;
     letter-spacing: -0.02em;
     text-align: left;
     color: var(--text-dark-color);
 }
 
 .about .text p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: left;
     color: var(--text-sec-color);
 }
@@ -436,15 +419,15 @@ nav .callUs a p:last-child {
 }
 
 .about ul.points li {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.875rem;
     text-align: left;
 }
 
 .about ul.points li span {
     font-weight: 700;
-    line-height: 23.28px;
+    line-height: 1.455rem;
     letter-spacing: 4px;
     text-align: left;
     color: var(--text-accent-color);
@@ -484,7 +467,9 @@ nav .callUs a p:last-child {
 
 /* slogan section */
 .slogan {
-    background-image: url("images/slogan.png");
+    background-image: url("../images/slogan.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 80dvh;
 }
 .slogan .container {
@@ -505,17 +490,17 @@ nav .callUs a p:last-child {
 }
 
 .slogan .slogan-content h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
     font-weight: 600;
-    line-height: 50.83px;
+    line-height: 3.1769rem;
     letter-spacing: -0.02em;
     text-align: left;
 }
 
 .slogan .slogan-content p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 1.75rem;
     text-align: left;
 }
 
@@ -541,6 +526,10 @@ nav .callUs a p:last-child {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.kits .card > img {
+    width: 100%;
+}
+
 .kits .card .card-content {
     display: flex;
     flex-direction: column;
@@ -549,24 +538,26 @@ nav .callUs a p:last-child {
 }
 
 .kits .card .card-content h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.875rem;
     text-align: left;
     color: var(--text-dark-color);
 }
 
 .kits .card .card-content p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: left;
     color: var(--text-sec-color);
 }
 
 /* teaser section */
 .teaser {
-    background-image: url("images/8116\ 1\ \(1\).png");
+    background-image: url("../images/8116\ 1\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 80dvh;
 }
 
@@ -590,17 +581,17 @@ nav .callUs a p:last-child {
 }
 
 .teaser .teaser-content h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
     font-weight: 600;
-    line-height: 50.83px;
+    line-height: 3.1769rem;
     letter-spacing: -0.02em;
     text-align: center;
 }
 
 .teaser .teaser-content p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 1.75rem;
     text-align: center;
 }
 
@@ -609,7 +600,7 @@ nav .callUs a p:last-child {
     background-color: var(--posts-section-bg);
 }
 .posts .container .posts-content {
-    padding-block: 150px;
+    padding-block: 9.375rem;
     display: flex;
     gap: 32px;
 }
@@ -647,18 +638,18 @@ nav .callUs a p:last-child {
 }
 
 .posts .container .posts-content .title h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
     font-weight: 600;
-    line-height: 50.83px;
+    line-height: 3.1769rem;
     letter-spacing: -0.02em;
     text-align: left;
     color: var(--text-dark-color);
 }
 
 .posts .container .posts-content .title p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.75rem;
     text-align: left;
     color: var(--text-sec-color);
 }
@@ -705,17 +696,17 @@ nav .callUs a p:last-child {
 }
 
 .posts .container .posts-content .posts-group .post-card .post-content h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.875rem;
     text-align: left;
     color: var(--text-dark-color);
 }
 
 .posts .container .posts-content .posts-group .post-card .post-content p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: left;
     color: var(--text-sec-color);
 }
@@ -727,7 +718,7 @@ nav .callUs a p:last-child {
 
 /* our values section */
 .values .container {
-    padding-block: 150px;
+    padding-block: 9.375rem;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -760,24 +751,24 @@ nav .callUs a p:last-child {
 }
 
 .values .values-cards .value-card h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.875rem;
     text-align: left;
     color: var(--text-dark-color);
 }
 
 .values .values-cards .value-card p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: left;
     color: var(--text-sec-color);
 }
 
 /* testimonials section */
 .testimonials .container {
-    padding-block: 150px;
+    padding-block: 9.375rem;
 }
 
 .testimonials .container .testimonials-content {
@@ -798,16 +789,16 @@ nav .callUs a p:last-child {
 }
 
 .testimonials .container .testimonials-content .title h3 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 4rem;
     text-align: left;
 }
 
 .testimonials .container .testimonials-content .title p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 2rem;
     text-align: left;
 }
 
@@ -833,23 +824,23 @@ nav .callUs a p:last-child {
 
 .testimonials .testimonial-container .testimonial h4 {
     font-family: "Plus Jakarta Sans";
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 20.16px;
+    line-height: 1.26rem;
     text-align: left;
     color: var(--main-color);
 }
 
 .testimonials .testimonial-container .testimonial p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 2.25rem;
     text-align: left;
     color: var(--text-dark-color);
 }
 
 .testimonials .testimonial-container .author {
-    width: 302px;
+    /* width: 302px; */
     height: 60px;
     display: flex;
     align-items: center;
@@ -870,16 +861,16 @@ nav .callUs a p:last-child {
 }
 
 .testimonials .testimonial-container .author .author-name h5 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 19.36px;
+    line-height: 1.21rem;
     text-align: left;
 }
 
 .testimonials .testimonial-container .author .author-name p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 19.36px;
+    line-height: 1.21rem;
     text-align: left;
 }
 
@@ -954,7 +945,7 @@ footer {
     background-color: var(--footer-bg);
 }
 footer .container {
-    padding-block: 150px;
+    padding-block: 9.375rem;
 }
 footer .footer-content {
     display: flex;
@@ -1004,9 +995,9 @@ footer .footer-content .navLinks ul {
 footer .footer-content .navLinks ul li a {
     text-decoration: none;
     color: var(--white-color);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     letter-spacing: 0.3px;
     text-transform: capitalize;
 }
@@ -1020,9 +1011,9 @@ footer .footer-content .subscription {
 }
 
 footer .footer-content .subscription p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: left;
     color: var(--white-color);
 }
@@ -1035,12 +1026,12 @@ footer .footer-content .subscription form {
 footer .footer-content .subscription form input {
     background-color: var(--footer-input-bg);
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     letter-spacing: 0.3px;
     text-align: left;
-    padding-inline: 34px;
+    padding-inline: 2.125rem;
     padding-block: 12px;
     color: var(--white-color);
     caret-color: var(--white-color);
@@ -1053,9 +1044,9 @@ footer .footer-content .subscription form input {
 
 footer .footer-content .subscription form input::placeholder {
     font-family: Inter;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: left;
     color: var(--footer-dark-grey);
 }
@@ -1074,10 +1065,10 @@ footer .footer-content .subscription form .space {
     content: "";
     background-color: var(--footer-input-bg);
     height: 100%;
-    width: 30px;
+    width: 150px;
     position: absolute;
     top: 0px;
-    right: 120px;
+    right: 50px;
     border: solid var(--footer-light-grey);
     border-width: 1px 0;
 }
@@ -1091,9 +1082,9 @@ footer .footer-content .footer-bottom .links ul {
 footer .footer-content .footer-bottom .links ul li a {
     text-decoration: none;
     font-family: Inter;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 1rem;
     letter-spacing: 0.257px;
     text-align: left;
     color: var(--footer-dark-grey);
@@ -1109,9 +1100,9 @@ footer .footer-content .footer-bottom .links ul li a::after {
 }
 
 footer .footer-content .footer-bottom .copyright {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 1rem;
     letter-spacing: 0.2571428716182709px;
     text-align: right;
     color: var(--footer-dark-grey);
